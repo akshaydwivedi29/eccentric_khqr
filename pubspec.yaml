@@ -1,0 +1,60 @@
+name: eccentric_khqr
+description: 'KHQR Plugin for Flutter'
+repository: https://github.com/akshaydwivedi29/eccentric_khqr
+issue_tracker: https://github.com/akshaydwivedi29/eccentric_khqr/issues
+homepage: https://github.com/akshaydwivedi29/eccentric_khqr
+
+version: 1.1.7
+
+
+topics:
+  - khqr
+  - khqr-sdk
+  - khqr-code
+  - bakong-khqr
+  - bakong
+
+environment:
+  sdk: ^3.7.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ">=0.18.1 <=0.20.2"
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+  plugin_platform_interface: ^2.1.8
+  pretty_qr_code: ^3.4.0
+  flutter_svg: ^2.1.0
+  auto_size_text: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  freezed: ^3.0.6
+  json_serializable: ^6.9.5
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.eccentric.khqr
+        pluginClass: KhqrSdkPlugin
+      ios:
+        pluginClass: KhqrSdkPlugin
+
+  assets:
+    - assets/fonts/nunito_sans/
+    - assets/images/
+    - assets/svg/
+
+  fonts:
+    - family: NunitoSans
+      fonts:
+        - asset: assets/fonts/nunito_sans/NunitoSans_7pt-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/nunito_sans/NunitoSans_7pt-Bold.ttf
+          weight: 700
